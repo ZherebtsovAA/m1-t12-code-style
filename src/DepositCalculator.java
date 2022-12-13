@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class DepositCalculator {
+
     double calculateComplexPercent(double depositAmount, double yearRate, int depositPeriod) {
         double result = depositAmount * Math.pow((1 + yearRate / 12), 12 * depositPeriod);
         return round(result, 2);
